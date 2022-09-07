@@ -19,8 +19,10 @@ function render(objArr) {
             <button class="detail button is-success is-focused"><a href="${currentHouse['rdc_web_url']}" target="_blank" style="color:white;">Click</a></button>
           </div>
         </div>
+        
       `
 
   });
   return housesArr.join('');
-}
+};
+
