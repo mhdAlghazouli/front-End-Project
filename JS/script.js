@@ -3,7 +3,7 @@ let userInput = document.getElementById('userInput');
 const searchBtn = document.getElementById('searchBtn');
 const content =document.getElementById('content-container');
 const sortBy = document.getElementById('sortBy');
-
+const propertyType = document.getElementById("propertyType")
 
 //add listener to the window
 window.addEventListener('DOMContentLoaded', e => {
