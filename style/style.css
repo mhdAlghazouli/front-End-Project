@@ -1,0 +1,122 @@
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0b1826;
+}
+.appName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: serif;
+    font-size: 50px;
+   background-image: linear-gradient(
+	to right,
+	#462523 0,
+    #cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+.discoverS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: serif;
+    font-size: 40px;
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+
+}
+
+.searchBox{
+    
+    width: 550px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #0b1826;
+    border: 2px solid #cb9b51;
+    color:  #cb9b51;
+    font-family: serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+
+}
+::placeholder{ 
+    color: #f6f2c0;
+   
+}
+.filters{
+    font-family: serif;
+    color: #f6e27a;
+    font-size: 20px;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+.sort{
+    margin-top: 15px;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f6e27a;
+    color: #0b1826;
+    font-family: serif;
+    font-size: medium;
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+   color: #0b1826;
+    font-family: sans-serif;
+   background-color: #0b1826;
+    border-radius: 50px
+    
+}
+
+.loadButton{
+    display: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    color: #0b1826;
+    font-family: sans-serif;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+        #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+border: 0px solid #462523;
+
+}
