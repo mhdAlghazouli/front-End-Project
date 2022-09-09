@@ -20,9 +20,11 @@ window.addEventListener('DOMContentLoaded', e => {
     searchBtn.disabled = 'true';
     //add event to the load more button
     loadMore.addEventListener('click',() => {
+      console.log('clicked')
       limit += 10;
+      forSaleFunc();
       loadMore.classList.add('is-loading');
-      forSaleFunc()
+      
     });
     
   });
