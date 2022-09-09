@@ -33,12 +33,12 @@
       <div class="is-flex is-justify-content-center mt-5">
         <!-- start sort by select div-->
         <div class="field mr-6">
-          <label class="label has-text-white-bis" style="font-family: monospace;">Property Type</label>
-          <div class="control">
-            <div class="select is-success">
-              <select style="font-family: monospace;" id="propertyType">
-                <option>for-sale</option>
-                <option>for-rent</option>
+          <label class="filters">Property Type</label>
+          <div class="">
+            <div class="control">
+              <select class="sort" id="propertyType">
+                <option value="for-sale">For-Sale</option>
+                <option value="for-rent">For-Rent</option>
               </select>
             </div>
           </div>
@@ -49,10 +49,10 @@
           <div class="control">
             <div class="select-is-success">
               <select class="sort" id="sortBy">
-                <option>relevance</option>
-                <option>newest</option>
-                <option>price_high</option>
-                <option>price_low</option>
+                <option value="relevance">Relevance</option>
+                <option value="newest">Newest</option>
+                <option value="price_high">Low-High</option>
+                <option value="price_low">High-Low</option>
               </select>
             </div>
           </div>
@@ -101,7 +101,7 @@ border: 2px solid #cb9b51;">Search</button>
         <button id="loadMore" class="loadButton " >load more</button>
       </div>
 
-      <h3>My Google Maps Demo</h3>
+      <h3></h3>
     <!--The div element for the map -->
     <div id="map"></div>
       
