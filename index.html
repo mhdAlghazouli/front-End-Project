@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
   <title>Real Estate App</title>
 
 </head>
   
 <body class="background">
-  <div class="container  p-6">
+  <div class="">
     <!-- start header div that contains h1 div and h2 div and user input div and sort by select div and minimum beds input div-->
     <div >
       <!--start h1 div  -->
@@ -19,17 +20,17 @@
         <h1>K.M.E Real Estate <span></span></h1>
       </div>
       <!-- start h2 div -->
-      <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-weight-semibold mt-3">
+      <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-weight-semibold ">
         <h2 class="discoverS" >Discover latest properties for sale anywhere in USA.</h2>
       </div>
 
     </div>
       <!-- start user input div -->
-      <div class="mt-6 " >
+      <div class="is-flex is-justify-content-center mt-6">
         <input type="text" class="searchBox" placeholder="Enter the location for properties ex:Atlanta, Ga" id="userInput"/>
       </div >
       <!-- start sort by select and Minimum Beds select -->
-      <div class="is-flex is-justify-content-start mt-6">
+      <div class="is-flex is-justify-content-center mt-5">
         <!-- start sort by select div-->
         <div class="field">
           <label class="filters">Sort By:</label>
@@ -55,16 +56,37 @@
       <!-- end sort by select div and Minimum Beds input div -->
       
       <!-- start search button -->
-      <div class="mt-3">
-        <button type="submit" class="searchBtn1 " id="searchBtn">Search</button>
+      <div class=" is-flex is-justify-content-center mt-3">
+        <button type="submit" class="button is-medium is-success " id="searchBtn" style="    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+    color: #0b1826;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+        #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+border: 2px solid #cb9b51;">Search</button>
       </div>
       <!-- start content body div-->
       <div>
       <div class="results" id="content-container"></div>
       </div>
       <!-- add hidden load more button -->
-      <div class="mt-3">
-        <button id="loadMore" class="loadButton">load more</button>
+      <div class=" is-flex is-justify-content-center mt-3 ">
+        <button id="loadMore" class="loadButton " >load more</button>
       </div>
       
     

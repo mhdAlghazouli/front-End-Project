@@ -2,7 +2,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '942b100ae0msh550abb7db92586dp11393ajsnbfc69e6b3d39',
+		'X-RapidAPI-Key': 'dd4478f7d1mshda225f66ed69b87p1fc374jsnea047b9f379e',
 		'X-RapidAPI-Host': 'realty-in-us.p.rapidapi.com'
 	}
 };
