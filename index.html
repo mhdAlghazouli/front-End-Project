@@ -32,6 +32,18 @@
       <!-- start sort by select and Minimum Beds select -->
       <div class="is-flex is-justify-content-center mt-5">
         <!-- start sort by select div-->
+        <div class="field mr-6">
+          <label class="label has-text-white-bis" style="font-family: monospace;">Property Type</label>
+          <div class="control">
+            <div class="select is-success">
+              <select style="font-family: monospace;" id="propertyType">
+                <option>for-sale</option>
+                <option>for-rent</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
         <div class="field">
           <label class="filters">Sort By:</label>
           <div class="control">
@@ -88,6 +100,10 @@ border: 2px solid #cb9b51;">Search</button>
       <div class=" is-flex is-justify-content-center mt-3 ">
         <button id="loadMore" class="loadButton " >load more</button>
       </div>
+
+      <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
       
     
 
@@ -101,5 +117,7 @@ border: 2px solid #cb9b51;">Search</button>
   <script async
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIah-zEu1jFSjbMibJoX0m0YFZgY-buRw&libraries=places&callback=activatePlacesSearch">
 </script>
+
+
 </body>
 </html>
