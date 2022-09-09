@@ -12,7 +12,7 @@
 </head>
   
 <body class="background">
-  <div class="container">
+  <div>
     <!-- start header div that contains h1 div and h2 div and user input div and sort by select div and minimum beds input div-->
     <div >
       <!--start h1 div  -->
@@ -33,10 +33,10 @@
       <div class="is-flex is-justify-content-center mt-5">
         <!-- start sort by select div-->
         <div class="field mr-6">
-          <label class="filters">Property Type</label>
+          <label class="filters">Property Type:</label>
           <div class="">
             <div class="control">
-              <select class="sort" id="propertyType">
+              <select class="sort" id="propertyType" style="width: 120px;">
                 <option value="for-sale">For-Sale</option>
                 <option value="for-rent">For-Rent</option>
               </select>
@@ -44,10 +44,10 @@
           </div>
         </div>
 
-        <div class="field">
+        <div class="field mr-6">
           <label class="filters">Sort By:</label>
           <div class="control">
-            <div class="select-is-success">
+            <div class="select-is-success ">
               <select class="sort" id="sortBy">
                 <option value="relevance">Relevance</option>
                 <option value="newest">Newest</option>
@@ -59,9 +59,9 @@
         </div>
         <!-- start minimum Beds input div-->
         <div>
-          <label class="filters" >Minimum Beds:</label>
+          <label class="filters pl-6" >Minimum Beds:</label>
           <div class="control pl-6">
-            <input type="number" min="1" max="10" class="sort" id="minBeds">
+            <input type="number" min="1" max="10" class="sort" id="minBeds" />
           </div>
         </div>
       </div>
