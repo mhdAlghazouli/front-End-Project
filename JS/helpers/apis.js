@@ -6,6 +6,7 @@ const options = {
 		'X-RapidAPI-Host': 'realty-in-us.p.rapidapi.com'
 	}
 };
+
 // for sale api function 
 function forSaleFunc() {
   let userInputArr = userInput.value.split(', ');
@@ -21,8 +22,12 @@ function forSaleFunc() {
 
     searchBtn.classList.remove('is-loading');
 
+    loadMore.style.display = 'block';
+
+    loadMore.classList.remove('is-loading');
+
     const detail = document.querySelectorAll('.detail');
-    console.log(detail);
+    
   })
   .catch(err => console.error(err));
 };
@@ -33,6 +38,7 @@ function activatePlacesSearch () {
   let autoComplete = new google.maps.places.Autocomplete(userInput);
 
 }
+
 
 
 
