@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', e => {
     
     searchBtn.classList.add('is-loading');
     forSaleFunc();
-    
+    searchBtn.disabled = 'true';
     //add event to the load more button
     loadMore.addEventListener('click',() => {
       limit += 10;
