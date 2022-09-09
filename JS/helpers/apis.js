@@ -13,7 +13,7 @@ function forSaleFunc() {
   let usCity = userInputArr[0];
   let usState = userInputArr[1];
   
-  fetch(`https://realty-in-us.p.rapidapi.com/properties/list-${propertyType.value}?state_code=${usState}&city=${usCity}&offset=0&limit=10&sort=price_low&beds_min=${document.getElementById('minBeds').value}`, options)
+  fetch(`https://realty-in-us.p.rapidapi.com/properties/list-${propertyType.value}?state_code=${usState}&city=${usCity}&offset=0&limit=10&sort=${sortBy.value}&beds_min=${document.getElementById('minBeds').value}`, options)
   .then(response => response.json())
   .then(data => {
     console.log(data.listings)
