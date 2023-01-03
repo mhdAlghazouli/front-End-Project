@@ -16,6 +16,7 @@ function forSaleFunc() {
   fetch(`https://realty-in-us.p.rapidapi.com/properties/list-${propertyType.value}?state_code=${usState}&city=${usCity}&offset=0&limit=${limit}&sort=${sortBy.value}&beds_min=${document.getElementById('minBeds').value}`, options)
   .then(response => response.json())
   .then(data => {
+    
 
     content.innerHTML = render(data.listings);
 
