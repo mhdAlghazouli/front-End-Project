@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style/style.css">
+  <!-- <link rel="stylesheet" href="./style/style.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <title>Real Estate App</title>
 
 </head>
   
-<body class="background ">
-  <div class="container ">
+<body class="background" style="font-family: monospace;">
+  <div class=" p-3  is-flex is-justify-content-center has-background-danger" >
+    <h1 style="font-size: 25px;">K.M.E Real Estate</h1>
+  </div>
+  <div class="container is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
     <!-- start header div that contains h1 div and h2 div and user input div and sort by select div and minimum beds input div-->
-    <div >
+    <div class="" style="width: 100%;">
       <!--start h1 div  -->
-      <div class="appName" >
-        <h1>K.M.E Real Estate <span></span></h1>
-      </div>
+      
       <!-- start h2 div -->
-      <div>
+      <div class="is-flex is-justify-content-center">
         <h2 class="discoverS" style="margin: 30px;">Discover latest properties for sale anywhere in USA.</h2>
       </div>
 
     </div>
       <!-- start user input div -->
-      <div class="is-flex is-justify-content-center mt-6">
-        <input type="text" class="searchBox" placeholder="Enter the location for properties ex:Atlanta, Ga" id="userInput" style="width: 100%;"/>
+      <div class="is-flex is-justify-content-center">
+        <input type="text" class="input is-danger" placeholder="Enter the location for properties ex:Atlanta, Ga" id="userInput"/>
       </div >
       <!-- start sort by select and Minimum Beds select -->
       <div class="is-flex is-justify-content-center mt-5">
@@ -35,8 +36,8 @@
         <div class="field mr-6">
           <label class="filters">Property Type:</label>
           <div class="">
-            <div class="control">
-              <select class="sort" id="propertyType" style="width: 120px;">
+            <div class="select is-danger">
+              <select class="" id="propertyType" style="width: 120px;">
                 <option value="for-sale">For-Sale</option>
                 <option value="for-rent">For-Rent</option>
               </select>
@@ -47,8 +48,8 @@
         <div class="field mr-6">
           <label class="filters">Sort By:</label>
           <div class="control">
-            <div class="select-is-success ">
-              <select class="sort" id="sortBy">
+            <div class="select is-danger">
+              <select class="" id="sortBy">
                 <option value="relevance">Relevance</option>
                 <option value="newest">Newest</option>
                 <option value="price_high">High-Low</option>
@@ -61,7 +62,7 @@
         <div>
           <label class="filters" >Minimum Beds:</label>
           <div class="control">
-            <input type="number" min="1" max="10" class="sort" id="minBeds" />
+            <input type="number" min="1" max="10" class="input is-danger" id="minBeds" />
           </div>
         </div>
       </div>
@@ -69,36 +70,16 @@
       
       <!-- start search button -->
       <div class=" is-flex is-justify-content-center mt-3">
-        <button type="submit" class="button is-medium is-success " id="searchBtn" style="    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 45px;
-    border-radius: 8px;
-    color: #0b1826;
-    font-family: sans-serif;
-    font-size: 35px;
-    margin-top: 20px;
-    margin-bottom: 80px;
-
-    background-image: linear-gradient(
-        to right,
-        #462523 0,
-        #cb9b51 22%, 
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
-        #462523 100%
-        );
-border: 2px solid #cb9b51;">Search</button>
+        <button type="submit" class="button is-medium is-danger " id="searchBtn">Search</button>
       </div>
       <!-- start content body div-->
-      <div>
-      <div class="results" id="content-container"></div>
-      </div>
+      
+        
+      <div class="content-container results is-flex is-flex-wrap-wrap is-justify-content-space-around row" id="content-container"></div>
+      
       <!-- add hidden load more button -->
       <div class=" is-flex is-justify-content-center mt-3 ">
-        <button id="loadMore" class="button loadButton " style="display: none;">load more</button>
+        <button id="loadMore" class="button is-medium is-danger " style="display: none;">load more</button>
       </div>
 
       <h3></h3>
@@ -115,7 +96,7 @@ border: 2px solid #cb9b51;">Search</button>
   <script src="./JS/helpers/apis.js"></script>
   <script src="./JS/helpers/render.js"></script>
   <script async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIah-zEu1jFSjbMibJoX0m0YFZgY-buRw&libraries=places&callback=activatePlacesSearch">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx_1OvQf9IepPl8r8fMQNVvz522z3eJuw&libraries=places&callback=activatePlacesSearch">
 </script>
 
 

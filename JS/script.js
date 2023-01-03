@@ -3,6 +3,7 @@ let userInput = document.getElementById('userInput');
 const searchBtn = document.getElementById('searchBtn');
 const content =document.getElementById('content-container');
 const sortBy = document.getElementById('sortBy');
+console.dir(sortBy)
 const propertyType = document.getElementById("propertyType")
 const loadMore = document.getElementById('loadMore');
 //create limit variables to add it to the api

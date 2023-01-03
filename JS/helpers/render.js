@@ -2,7 +2,7 @@ function render(objArr) {
   let housesArr = objArr.map(currentHouse => {
 
       return `
-        <div class="mt-6 has-background-white row" style="width:18rem; margin-bottom:16px; border-radius: 15px;">
+        <div class="mt-6 has-background-white row" style="width:18rem; margin-bottom:16px; border-radius: 15px;box-shadow:10px 10px 10px 10px #888888;">
           <div class="column">
             <img src="${noImage(currentHouse)}" style="width:18rem; height:200px; border-radius: 15px;"/>
           </div>
@@ -16,7 +16,7 @@ function render(objArr) {
             <h2 style="font-size:15px;">${currentHouse.price}</h2>
           </div>
           <div class="column">
-            <button class="detail button is-success is-focused"><a href="${currentHouse['rdc_web_url']}" target="_blank" style="color:white;">Click</a></button>
+            <button class="detail button is-danger is-focused"><a href="${currentHouse['rdc_web_url']}" target="_blank" style="color:white;">Details</a></button>
           </div>
         </div>
         
